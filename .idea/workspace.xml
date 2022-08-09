@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a725653-4c5e-4936-871e-52e644698196" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/home/stady/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/home/stady/container/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/container/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/home/stady/container/ContainingWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/container/ContainingWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/home/stady/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/Ship.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/home/stady/main/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/main/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/home/stady/main/GenerateRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/main/GenerateRandom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/home/stady/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/main/Main.java" afterDir="false" />

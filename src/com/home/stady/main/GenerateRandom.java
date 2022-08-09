@@ -1,13 +1,17 @@
 package com.home.stady.main;
 
+import com.home.stady.Deck;
 import com.home.stady.container.ConeShapedContainer;
 import com.home.stady.container.Container;
 import com.home.stady.container.CubeShapedContainer;
 import com.home.stady.container.CylinderShapedContainer;
 
-import java.util.Random;
+import java.util.*;
 
 public class GenerateRandom {
+
+    public static List<String> names = new ArrayList<>(Arrays.asList("Alice", "Barbara", "Elizabeth", "Catherine",
+            "Margaret", "Irene", "Sophie", "Charlotte", "Abigail", "Alberta"));
 
     public static int generateHeight() {
         Random random = new Random();
@@ -79,6 +83,21 @@ public class GenerateRandom {
             }
         }
         return containers;
+    }
+
+    public static String generateName() {
+        Random random = new Random();
+        int randomNumber = random.nextInt(0, names.size());
+        return names.remove(randomNumber);
+    }
+
+    public static Deck generateDeck() {
+        return new Deck();
+    }
+
+    public static int generateCountDeck() {
+        Random random = new Random();
+        return random.nextBoolean() ? 1 : 2;
     }
 }
 
