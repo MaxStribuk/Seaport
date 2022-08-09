@@ -64,10 +64,10 @@ public class Container implements ContainingWater {
 
     public void setDiagonal(int diagonal) {
         switch (diagonal) {
-            case Constants.DIAGONAL_HIGH -> this.diagonal = Constants.DIAGONAL_HIGH;
+            case Constants.DIAGONAL_BIG -> this.diagonal = Constants.DIAGONAL_BIG;
             case Constants.DIAGONAL_SMALL -> this.diagonal = Constants.DIAGONAL_SMALL;
             default -> {
-                if (this.diagonal == Constants.DIAGONAL_HIGH
+                if (this.diagonal == Constants.DIAGONAL_BIG
                         || this.diagonal == Constants.DIAGONAL_SMALL) {
                     System.out.println(Constants.CORRECT_DIAGONAL);
                 } else {
@@ -90,7 +90,6 @@ public class Container implements ContainingWater {
         return this.getWaterDensity() * calculateVolume();
     }
 
-    @Override
     public int calculateVolume() {
         return 0;
     }

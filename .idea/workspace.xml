@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a725653-4c5e-4936-871e-52e644698196" name="Changes" comment="" />
+    <list default="true" id="1a725653-4c5e-4936-871e-52e644698196" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/home/stady/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/home/stady/container/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/container/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/home/stady/container/ContainingWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/container/ContainingWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/home/stady/main/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/main/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/home/stady/main/GenerateRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/main/GenerateRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/home/stady/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/main/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +28,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -30,6 +43,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2CytWhE2xlauy9eRN3ZvQOX30RN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -91,6 +105,9 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.home.stady.main.Main" />
@@ -119,11 +136,22 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/home/stady/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/com/home/stady/main/Main.java</url>
           <line>19</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>

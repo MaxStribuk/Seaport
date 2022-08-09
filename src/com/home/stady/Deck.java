@@ -1,5 +1,106 @@
 package com.home.stady;
 
-public class Deck {
+import com.home.stady.container.Container;
+import com.home.stady.container.ContainingWater;
+import com.home.stady.main.Constants;
+import com.home.stady.main.GenerateRandom;
 
+public class Deck implements ContainingWater {
+
+    private Container[] containers;
+
+    public Deck() {
+        this.containers = GenerateRandom.generateArrayContainers();
+    }
+
+    public Deck(int count) {
+        this.containers = GenerateRandom.generateArrayContainers(count);
+    }
+
+    public Deck(Container container1, Container container2) {
+        if (container1.getDiagonal() != Constants.DIAGONAL_BIG
+                || container2.getDiagonal() != Constants.DIAGONAL_BIG) {
+            System.out.println(Constants.INCORRECT_BIG_CONTAINER);
+            containers = new Container[]{container1, container2};
+            for (Container container : containers) {
+                container.setDiagonal(Constants.DIAGONAL_BIG);
+            }
+        } else {
+            containers = new Container[]{container1, container2};
+        }
+    }
+
+    public Deck(Container container1, Container container2, Container container3, Container container4) {
+        if (container1.getDiagonal() != Constants.DIAGONAL_SMALL
+                || container2.getDiagonal() != Constants.DIAGONAL_SMALL
+                || container3.getDiagonal() != Constants.DIAGONAL_SMALL
+                || container4.getDiagonal() != Constants.DIAGONAL_SMALL) {
+            System.out.println(Constants.INCORRECT_SMALL_CONTAINER);
+            containers = new Container[]{container1, container2, container3, container4};
+            for (Container container : containers) {
+                container.setDiagonal(Constants.DIAGONAL_SMALL);
+            }
+        } else {
+            containers = new Container[]{container1, container2, container3, container4};
+        }
+    }
+
+    public Deck(Container[] containers) {
+        boolean isCorrectContainers = isCorrectContainers(containers);
+        if (isCorrectContainers) {
+            this.containers = containers;
+        } else {
+            System.out.println(Constants.INCORRECT_CONTAINERS_ARRAY);
+            this.containers = GenerateRandom.generateArrayContainers();
+        }
+    }
+
+    public Container[] getContainers() {
+        return containers;
+    }
+
+    public void setContainers(Container[] containers) {
+        boolean isCorrectContainers = isCorrectContainers(containers);
+        if (isCorrectContainers) {
+            this.containers = containers;
+        } else {
+            isCorrectContainers = isCorrectContainers(this.containers);
+            if (isCorrectContainers) {
+                System.out.println(Constants.CORRECT_CONTAINERS_ARRAY);
+            } else {
+                System.out.println(Constants.INCORRECT_CONTAINERS_ARRAY);
+                this.containers = GenerateRandom.generateArrayContainers();
+            }
+        }
+    }
+
+    private boolean isCorrectContainers(Container[] containers) {
+        boolean isCorrectContainers = false;
+        if (containers == null) {
+            return isCorrectContainers;
+        }
+        for (Container container : containers) {
+            if (container == null) {
+                return isCorrectContainers;
+            }
+        }
+        if (containers.length == 2) {
+            isCorrectContainers = containers[0].getDiagonal()
+                    + containers[1].getDiagonal() == Constants.DIAGONAL_BIG * 2;
+        } else if (containers.length == 4) {
+            isCorrectContainers = containers[0].getDiagonal()
+                    + containers[1].getDiagonal() + containers[2].getDiagonal()
+                    + containers[3].getDiagonal() == Constants.DIAGONAL_SMALL * 4;
+        }
+        return isCorrectContainers;
+    }
+
+    @Override
+    public int getWaterMass() {
+        int waterMass = 0;
+        for (Container container : containers) {
+            waterMass += container.getWaterMass();
+        }
+        return waterMass;
+    }
 }
