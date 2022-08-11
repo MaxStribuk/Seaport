@@ -114,7 +114,7 @@ public class Ship implements ContainingWater {
         }
     }
 
-    public void remove (Deck deck) {
+    public void remove(Deck deck) {
         if (deck == null) {
             System.out.println(Constants.DECK_NOT_IS_NULL);
         } else {
@@ -135,8 +135,17 @@ public class Ship implements ContainingWater {
 
     @Override
     public String toString() {
-        return "Корабль " + name + ":\nпервая палуба - \n" + firstDeck +
-                "вторая палуба - \n" + secondDeck + "\n";
+        StringBuilder stringBuilder = new StringBuilder("Корабль ");
+        stringBuilder.append(name)
+                .append(":\nпервая палуба - \n")
+                .append(firstDeck)
+                .append("вторая палуба - ");
+        if (secondDeck == null) {
+            stringBuilder.append("отсутствует\n");
+        } else {
+            stringBuilder.append("\n").append(secondDeck);
+        }
+        return stringBuilder.toString();
     }
 
     @Override

@@ -6,7 +6,10 @@ import com.home.stady.container.Container;
 import com.home.stady.container.CubeShapedContainer;
 import com.home.stady.container.CylinderShapedContainer;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
 
 public class GenerateRandom {
 
@@ -87,8 +90,12 @@ public class GenerateRandom {
 
     public static String generateName() {
         Random random = new Random();
-        int randomNumber = random.nextInt(0, names.size());
-        return names.remove(randomNumber);
+        if (names.size() != 0) {
+            int randomNumber = random.nextInt(0, names.size());
+            return names.remove(randomNumber);
+        } else {
+            return String.valueOf(random.nextDouble());
+        }
     }
 
     public static Deck generateDeck() {
@@ -98,6 +105,11 @@ public class GenerateRandom {
     public static int generateCountDeck() {
         Random random = new Random();
         return random.nextBoolean() ? 1 : 2;
+    }
+
+    public static int generateCountShips() {
+        Random random = new Random();
+        return random.nextInt(1, 11);
     }
 }
 

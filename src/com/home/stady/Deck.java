@@ -5,8 +5,6 @@ import com.home.stady.container.ContainingWater;
 import com.home.stady.main.Constants;
 import com.home.stady.main.GenerateRandom;
 
-import java.util.Arrays;
-
 public class Deck implements ContainingWater {
 
     private Container[] containers;
@@ -108,6 +106,10 @@ public class Deck implements ContainingWater {
 
     @Override
     public String toString() {
-        return Arrays.toString(containers) + "\n";
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Container container : containers) {
+            stringBuilder.append(container).append("\n");
+        }
+        return stringBuilder.toString();
     }
 }
