@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a725653-4c5e-4936-871e-52e644698196" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/home/stady/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/home/stady/Seaport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/Seaport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/home/stady/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/home/stady/main/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/main/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/home/stady/main/GenerateRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/main/GenerateRandom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/home/stady/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/home/stady/main/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="1a725653-4c5e-4936-871e-52e644698196" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
